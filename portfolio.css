@@ -1,0 +1,149 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+  }
+  header {
+    background: #1e293b;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  header h1 {
+    font-size: 26px;
+    color: #38bdf8;
+  }
+  nav a {
+    margin-left: 30px;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: #38bdf8;
+  }
+  section {
+    padding: 80px 50px;
+    min-height: 100vh;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .hero:hover{
+    text-shadow: 1px 1px 5px ;
+  }
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+  }
+  .hero p {
+    font-size: 20px;
+    color: #94a3b8;
+  }
+  .skills, .projects, .contact {
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  .skills h3, .projects h3, .contact h3 {
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+  }
+  .skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .skills li:hover{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-li:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+
+
+  .skills li {
+    background: #334155;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  .projects .card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  .contact button {
+    background: #38bdf8;
+    border: none;
+    padding: 10px;
+    color: #0f172a;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .contact button:hover {
+    background: #0ea5e9;
+  }
+  footer {
+    background: #1e293b;
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
