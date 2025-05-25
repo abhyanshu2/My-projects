@@ -1,0 +1,287 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* header section */
+header {
+  background: linear-gradient(to right, #0077cc, #005fa3); 
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+header p {
+  font-size: 1.2em;
+  font-style: bold;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  position: relative;
+}
+
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+header nav a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+  /* health information */
+
+.resources {
+  max-width: 800px;
+  margin: auto;
+}
+
+.resource-card {
+  display: flex;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  transition: box-shadow 0.3s ease , 
+  transform 0.3s ease;
+  cursor: pointer;
+}
+
+.resource-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.resource-card img {
+  width: 50px;
+  height: 50px;
+  background-color: #0078d4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.resource-card:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.resource-info h3 {
+  margin: 0;
+  color: #0078d4;
+}
+
+.resource-info p {
+  margin: 5px 0 0;
+  color: #333;
+}
+
+.resource-info h3 {
+  margin: 0;
+  color: #0078d4;
+}
+
+.resource-info p {
+  margin: 5px 0 0;
+  color: #333;
+}
+  
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0f7ff;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-text button:hover {
+  background-color: #005fa3;
+}
+
+.hero-img img {
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Sections */
+section {
+  padding: 40px 60px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+
+/* Search Box */
+#search {
+  padding: 10px;
+  width: 250px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* File Upload */
+#upload input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Contact Section */
+#contact p, #contact a {
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+  background-color: #003d66;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+/* gg */
+
+.accordion {
+  margin-top: 15px;
+}
+
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.accordion-btn:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+/* Product Grid */
+/* .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+} */
+
+

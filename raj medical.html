@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Medical - Medicine at Your Doorstep</title>
+  <link rel="stylesheet" href="raj medical.css" />
+</head>
+  <header>
+    <h1>Raj Medical</h1>
+    <p>Same Day Medicine Delivery in Your City!</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#upload">Upload Prescription</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Up to 10% OFF on Essential Medicines</h2>
+    <p>Fast Delivery | Doctor Consultation | Health Advice</p>
+    <button >Shop Now</button>
+  </div>
+  <div class="hero-img">
+    <img src="hero_image-removebg-preview.png" alt="Doctor">
+  </div>
+</section>
+
+  <section id="home">
+    <h2>Order Medicines Online</h2>
+    <input type="text" id="search" placeholder="Search medicines..." />
+    <button onclick="searchMedicine()">Search</button>
+  </section>
+  
+
+   <section class="resources">
+    <div class="resource-card">
+      <img src="1.jpg" alt="Health Topics">
+      <div class="resource-info">
+        <h3>Health Topics</h3>
+        <p>Find information on health, wellness, disorders and conditions</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="2.jpeg" alt="Medical Encyclopedia">
+      <div class="resource-info">
+        <h3>Medical Encyclopedia</h3>
+        <p>Articles and images for diseases, symptoms, tests, treatments</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="3.jpeg" alt="Genetics">
+      <div class="resource-info">
+        <h3>Genetics</h3>
+        <p>Explore genetic conditions, genes, and how variations affect health</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="4.jpeg" alt="Drugs & Supplements">
+      <div class="resource-info">
+        <h3>Drugs & Supplements</h3>
+        <p>Prescription drugs, OTC meds, herbs, and supplements</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="5.jpeg" alt="Medical Tests">
+      <div class="resource-info">
+        <h3>Medical Tests</h3>
+        <p>Why doctors order medical tests and what results mean</p>
+      </div>
+    </div>
+
+    <div class="resource-card">
+      <img src="6.jpg" alt="Healthy Recipes">
+      <div class="resource-info">
+        <h3>Healthy Recipes</h3>
+        <p>Learn to prepare healthy, quick meals for a better lifestyle</p>
+      </div>
+    </div>
+  </section>
+
+<div id="healthAccordion" class="accordion" style="display: none;">
+  <button class="accordion-btn">Find topics A-Z</button>
+  <button class="accordion-btn">Body Location/Systems</button>
+  <button class="accordion-btn">Disorders and Conditions</button>
+  <button class="accordion-btn">Diagnosis and Therapy</button>
+  <button class="accordion-btn">Demographic Groups</button>
+  <button class="accordion-btn">Health and Wellness</button>
+</div>
+
+  <!-- prescription section -->
+  <section id="upload">
+    <h2>Upload Your Prescription</h2>
+    <input type="file" id="prescription" />
+    <button onclick="uploadPrescription()">Upload</button>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Address:</strong> Near City Hospital, Main Road</p>
+  <p><strong>Phone:</strong> <a href="tel:+916206358342">+91-6206358342</a></p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/916206358342" target="_blank">Chat with us on WhatsApp</a></p>
+  <p><strong>Email:</strong> <a href="mailto:rajmedical@gmail.com">rajmedical@gmail.com</a></p>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Raj Medical. All rights reserved.</p>
+  </footer>
+
+  <script src="raj medical.js"></script>
+</body>
+</html>
+
+
